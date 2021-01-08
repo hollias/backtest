@@ -41,7 +41,6 @@ async function bulkSync() {
   bar.start(tickers.length, 0);
   const errorTickers = [];
   for (let i = 0; i < tickers.length; i += 1) {
-    // TODO: run bash script
     try {
       console.log(`${scriptDir} ${tickers[i]}`);
       await execCommand(`${scriptDir} ${tickers[i]}`);
