@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "packages": ["packages/*"]
+  "private": true,
+  "workspaces": ["packages/*"]
 }
 
 
